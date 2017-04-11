@@ -1,0 +1,23 @@
+<!-- Categpry -->
+<div class="col-lg-12">
+    
+    <hr class="recent-hr">
+
+    {% assign categories_list = site.categories %}
+      {% if categories_list.first[0] == null %}
+        {% for category in categories_list %}
+            <div class="recent">
+                <a href="{{ category | prepend: '/category/' | prepend: site.url }}" class="recent-item"> {{ category | capitalize }} ({{ site.tags[category].size }})</a>
+            </div>
+            <hr class="recent-hr">
+        {% endfor %}
+      {% else %}
+        {% for category in categories_list %}
+            <div class="recent">
+                <a href="{{ category[0] | prepend: '/category/' | prepend: site.url }}" class="recent-item"> {{ category[0] | capitalize }} ({{ category[1].size }})</a>
+            </div>
+            <hr class="recent-hr">
+        {% endfor %}
+      {% endif %}
+   {% assign categories_list = nil %}
+</div>

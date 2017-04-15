@@ -13,7 +13,14 @@ layout: default
 
           <div class="post-content" itemprop="articleBody">
             {{ content }}
+            {% assign tag_list = page.tags %}
+
           </div>
+          Tags:   {% for tags in tag_list %}
+
+                        <button class="btn btn-primary btn-xs">{{ tags | capitalize }}</button>
+                        {% endfor %}
+
 
     </article>
     <div class="row">
@@ -44,4 +51,4 @@ layout: default
 </div>
 
 
-{% include fb-script.html %}
+<!-- {% include fb-script.html %} -->

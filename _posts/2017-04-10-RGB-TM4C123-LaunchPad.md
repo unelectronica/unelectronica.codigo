@@ -8,7 +8,13 @@ tags: TivaC
 
 
 La tarjeta TM4C123 cuenta con un led RGB, en el IDE Energía tenemos configurados los 3 pines del led RGB
-como `RED_LED` , `GREEN_LED`, `BLUE_LED`, con la combinación de estos 3 bit podemos obtener 8 colores.
+como <mark>RED_LED</mark>, <mark>GREEN_LED</mark>, <mark>BLUE_LED</mark> , con la combinación de estos 3 bit podemos obtener 8 colores.
+
+<figure class="figure">
+<img class="img-responsive img-rounded" src="{{site.baseurl}}/images/scheaticRGBTM4C123.png">
+<figcaption class="figure-caption text-center">Esquemático led RGB TM4C123</figcaption>
+</figure>
+<br>
 
 {% highlight CPP %}
 
@@ -40,5 +46,5 @@ void writeRGB(unsigned int num){
 
 
 [GitHub code: Hola Mundo RGB](https://github.com/unelectronica/notas-microcontroladores/tree/master/TM4C123GXL%20/HolaMundoRGB)
-Watch my video on instlallation
+
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/cweOei34z1E" frameborder="0" allowfullscreen></iframe>

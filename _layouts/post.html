@@ -16,10 +16,10 @@ layout: default
             {% assign tag_list = page.tags %}
 
           </div>
+          <br>
           Tags:   {% for tags in tag_list %}
-
-                        <button class="btn btn-primary btn-xs">{{ tags | capitalize }}</button>
-                        {% endfor %}
+                        <button class="btn btn-info btn-xs">{{ tags | capitalize }}</button>
+                  {% endfor %}
 
 
     </article>

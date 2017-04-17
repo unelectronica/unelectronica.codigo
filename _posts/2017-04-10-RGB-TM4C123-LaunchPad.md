@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LED RGB TM4C123 LAUNCH PAD
-img: TivaRGB.png
+img: TivaRGBv2.png
 categories: TivaC
 tags: TivaC
 ---

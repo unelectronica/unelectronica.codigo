@@ -2,7 +2,7 @@
 layout: post
 title: Instalación Energia
 img: Energia.png
-categories: TivaC ToolChain
+categories: TivaC ToolChain Energia
 tags: TivaC ToolChain Energia
 ---
 <h2>Instalación herramientas de desarrollo TivaC LaunchPad</h2>

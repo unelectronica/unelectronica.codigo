@@ -45,6 +45,6 @@ void writeRGB(unsigned int num){
  {% endhighlight %}
 
 
-[GitHub code: Hola Mundo RGB](https://github.com/unelectronica/notas-microcontroladores/tree/master/TM4C123GXL%20/HolaMundoRGB)
 
+<a href="https://github.com/unelectronica/notas-microcontroladores/tree/master/TM4C123GXL%20/HolaMundoRGB" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Hola Mundo RGB</a>
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/cweOei34z1E" frameborder="0" allowfullscreen></iframe>

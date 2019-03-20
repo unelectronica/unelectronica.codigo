@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PROTOCOLO IBUS
-img: 
+img: receptor.png
 categories: esp8266 IOT, Arduino
 tags: esp8266 IOT Arduino
 ---  
@@ -11,3 +11,7 @@ tags: esp8266 IOT Arduino
 <p>IBUS es un protocolo de control serial de Flysly. Es un protocolo de comunicación bidireccional</p>
 
 
+ <figure class="figure">
+    <img class="img-responsive img-rounded img-fluid" src="{{site.baseurl}}/images/receptorPins.png">
+ </figure>
+ 

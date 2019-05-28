@@ -4,4 +4,4 @@
 
 ## Lanzando el servidor con borradores
 
-        sudo jekyll serve --drafts
+        bundle exec jekyll serve --drafts

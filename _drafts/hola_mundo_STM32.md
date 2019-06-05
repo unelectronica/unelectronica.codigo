@@ -1,11 +1,16 @@
 ---
 layout: post
-title: Hola Mundo Stm32
+title: Primeros Pasos con los Stm32
 img: stm32.png
 categories: STM32
 tags: STM32
 ---
+
+
+Todos los microcontroladores de la familia STM32F1, poseen un núcleo de 32 bits basados en los procesadores ARM Cortex-M3, con una tecnología RISC más eficiente, que permite la ejecución de códigos a mayor velocidad que en otros micros y con la potencia de un micro industrial que se hace accesible y no limita la realización de proyectos tan complejos como la imaginación del usuario permita.
+
 Este será el primer proyecto usando una tarjeta de desarrollo basada en el microcontrolador **ARM Cortex M3 STM32F103C8T6** de 32 bits de la empresa STMicroelectronics , el cual cuenta con las siguientes características:
+
 
 * Empaquetado: LQFP
 * Número de pines: 48
@@ -17,15 +22,16 @@ Este será el primer proyecto usando una tarjeta de desarrollo basada en el micr
 * 1 reloj de tiempo real (RTC)
 * 26 entradas y salidas digitales.
 * Interrupciones en todos los pines I/O.
-* ADC: 2 ADC de 12-bit, o entradas analógicas. 
+* ADC: 2 ADC de 12-bit, 10 entradas analógicas. 
 * 7 temporizadores de propósito general de 16 bits.
 * 2 puertos I2C.
 * 2 puertos SPI.
 * 3 puertos RS232 USUARTs.
 * 1 puerto CAN.
-* Micro USB para alimentación y comunicación de la placa.
+* Micro USB 2.0 (12 Mbit/s) para alimentación y comunicación de la placa.
 * Soporta DEBUG por JTAG y SWD
 * Tensión de funcionamiento entre 2 Vcc y 3.6 Vcc.
+* una unidad de calculo CRC (cyclic redundancy check).
 
 El microcontrolador STM32F103C8T6 permite cargar el firmware en la memoria SRAM como en la memoria FLASH, para lo cual cuenta con un pin llamado BOOT0 y dependiendo si está a gnd o vcc el firmware se carga en una memoria o en la otra, la tarjeta de desarrollo cuenta con dos Jumpers para esta función.
 
@@ -72,7 +78,10 @@ La placa puede ser programada por dos métodos, mediante un adaptador USB-SERIE 
     <img class="img-responsive rounded img-fluid" src="{{site.baseurl}}/images/STM32F103C8T6_PINOUT.jpg">
     <figcaption class="figure-caption text-center">Pinout tarjeta de desarrollo</figcaption>
   </figure>
-  Programa de prueba, la tarjeta cuenta con un led conectado al pin PC13 
+
+  ##Programación de la tarjeta
+
+ La tarjeta desarrollo cuenta con un led conectado al pin PC13 
 
 {% highlight CPP %}
 

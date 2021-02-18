@@ -2,7 +2,7 @@
 layout: post
 title: PROTOCOLO IBUS
 img: receptor.png
-categories: esp8266 IOT, Arduino
+categories: esp8266 IOT Arduino
 tags: esp8266 IOT Arduino
 ---  
 <p>Con el objetivo de añadir un control remoto de radio control a futuros proyectos, analizaremos el protocolo de comunicación <b>IBUS</b> </p>

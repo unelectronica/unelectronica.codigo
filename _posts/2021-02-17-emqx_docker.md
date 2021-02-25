@@ -7,12 +7,12 @@ tags: IOT Docker
 ---
 ## ¿Qué es EMQX?
 
-EMQX es un broker MQTT de código abierto altamente escalable y permite la creación de un cluster con múltiples nodos lo que permite el manejo de miles de conexiones, EMQX permite su gestión a través de un dashboard muy completo e integra varios plugins que facilitan el manejo de usuarios y reglas para administrar los permisos de cada uno.
+EMQX es un broker MQTT de código abierto altamente escalable y permite la creación de un cluster con múltiples nodos lo que facilita el manejo de miles de conexiones, EMQX permite su gestión a través de un dashboard muy completo e integra varios plugins que facilitan el manejo de usuarios y reglas para administrar los permisos de cada uno.
 
 
 ## Instalación
 
-Por Simplicidad se corre un contenedor Docker del broker EMQX sobre una Raspberry Pi 3
+Para la instalación del broker se puede sar Docker corriendo un contenedor con una instancia de EMQX sobre una Raspberry Pi 3
 
 ### Instalación docker
 
@@ -31,7 +31,7 @@ No se permite la conexión de usuarios anónimos, en caso de querer permitirlos 
 
 luego de que termine la descarga de la imagen e inicie el contenedor se puede acceder al broker EMQX mediante el navegador en la dirección **http://ip_raspberry:18083** 
 
-las credenciales iniciales son username = **admin** y password = **public**, luego de acceder se pueden cambiar las credenciales en la pestaña **Users**
+las credenciales por defecto son username = **admin** y password = **public**, luego de acceder se pueden cambiar las credenciales en la pestaña **Users**
 
 <figure class="figure">
    <img class="Dashboard Emqx" src="{{site.baseurl}}/images/emqx/emqx_1.png">
@@ -61,3 +61,5 @@ EMQX es un broker muy completo, para mas información es recomendado leer la doc
 ## Referencias
 
 <a href="https://docs.emqx.io/en/broker/latest/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> Documentación broker EMQX</a>
+
+<a href="https://hub.docker.com/r/emqx/emqx" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>https://hub.docker.com/r/emqx/emqx</a>

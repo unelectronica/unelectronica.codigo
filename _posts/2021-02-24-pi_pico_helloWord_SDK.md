@@ -6,7 +6,8 @@ categories: PI_PICO
 tags: Pico
 ---  
 
-La raspberry pi pico es una tarjeta de desarrollo de la fundación Raspberry pi basada en el RP2040, el cual es un microcontrolador dual core diseñado por la fundación.
+
+La Raspberry pi pico es una tarjeta de desarrollo creada por la fundación Raspberry pi basada en el RP2040, el cual es un microcontrolador dual core diseñado también por la fundación.
 
 ### Características principales del  RP4020
 
@@ -21,24 +22,24 @@ La raspberry pi pico es una tarjeta de desarrollo de la fundación Raspberry pi 
 + 3 ADC de 12 bits
 + 16 canales PWM
   
- <figure class="figure">
-   <img class="websocket pruebas" src="{{site.baseurl}}/images/pi_pico/Pi-Pico-pinout-diagram.png">
-</figure>
 
+{% include imagen.html id='pi_pico/Pi-Pico-pinout-diagram.png' %}
 
 ## Herramientas de desarrollo
 
-Actualmente la tarjeta se puede programar usando Micropython y un SDK de C, aunque se a anunciado que próximamente se integrará al IDE de Arduino.
+Actualmente la tarjeta se puede programar usando Micropython y un SDK de C, aunque se ha anunciado por parte de Arduino que próximamente se integrará la tarjeta a su IDE.
 
 
 
 ### Instalación SDK C
 
-se procede a instalar en Ubuntu 20.04 las herramientas necesarias para el trabajo con la SDK **pico_sdk** 
+Se procede a instalar en Ubuntu 20.04 las herramientas necesarias para el trabajo con la SDK **pico_sdk** 
 
 + Compilador gcc para procesadores arm
 + CMake
++ libnewlib-arm-none-eabi
 + build-essential
+  
 
 ``` sh
 sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
@@ -60,7 +61,7 @@ export PICO_SDK_PATH={ruta sdk}/pico-sdk
 
 ### Instalación extensiones de VisualStudio Code
 
-Para trabajar con la tarjeta  usaremos el Ide de  VisualStudio Code, se instalan las siguientes extensiones que nos facilitan el trabajo con cmake
+Para trabajar con la tarjeta  usaremos el Ide de  VisualStudio Code, se instalan las siguientes extensiones que nos facilitarán el trabajo con CMake
 
 ``` sh
   code --install-extension marus25.cortex-debug
@@ -69,7 +70,7 @@ Para trabajar con la tarjeta  usaremos el Ide de  VisualStudio Code, se instalan
 ```
 
 ### Hola mundo
-En este ejemplo se hace parpadear el led que viene con la tarjeta, el cual se encuentra conectado al pin 25 del microcontrolador.
+En este ejemplo se hace parpadear el led que viene integrado en la tarjeta, el cual se encuentra conectado al pin 25 del microcontrolador.
 Se crea una carpeta y se abre con VisualStudio code, se crean los siguientes archivos :
 
 **CMakeLists.txt**
@@ -115,13 +116,13 @@ int main() {
 {% endhighlight %}
 
  luego de creado los dos archivos se procede a hacer click  en el botón **versión de compilación**
- <figure class="figure">
-   <img class="websocket pruebas" src="{{site.baseurl}}/images/pi_pico/build_vcode.png">
-</figure>
 
-Por ultimo se conecta la tarjeta al puerto usb manteniendo pulsado el botón blanco, el computador la reconocerá como un medio de almacenamiento y se procede a copiar el archivo **main.uf2** que se genero la carpeta **build** del proyecto.
+{% include imagen.html id='pi_pico/build_vcode.png' %}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S-q6hmXemwY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Por último solo queda en pasar el firmware a la tarjeta y para esto se conecta la tarjeta al puerto usb manteniendo pulsado el botón blanco, con esto el computador la reconocerá como un medio de almacenamiento lo cual nos permite copiar el archivo **main.uf2** que se genero la carpeta **build** del proyecto.
+
+{% include youtubePlayer.html id='S-q6hmXemwY'%}
   
 <h3>Referencias</h3>
   
